@@ -67,7 +67,7 @@ In this problem set, you will implement two different methods to find the minimu
 5. Please use the template we provided, `template.py`, to take the input and print the output. You can copy it to files "ps1a.py" and "ps1b.py" for your solutions below.
 
 ## Part A: Brute-Force Search
-
+n 
 In this part, we can simply try different values for `T` starting from `1` and up until the maximum `T` value, which is given as `10000`. 
 
 This solution will be the simplest solution. However, it will not be efficient because we will try all of the values exhaustively.
@@ -84,7 +84,7 @@ You can think of the bisection search as searching one half of the search region
 ** Example: **
 
 Assume that `N` and `B` are `4` and `589999`, respectively.
-In the bisection search, we have the range between `0` and `10000`. The first middle value we will try is `5000`. 
+In the bisection search, we have the range between `0` and `10000`. The first middle value we will try is `5000`.  
 
 For the first try, we will calculate the value as `590000` which is greater than `B` and satisfies the equation but we do not know if there are values smaller than `5000` and satisfies the elements. There might be values smaller than `5000` and satisfies the equation, in this case, we will find them. However, there might be cases such that the element we are currently trying is the smallest element that satisfies the equation (like in this case). To handle those cases, you need to remember the minimum value that satisfies the equation before searching the smaller values (i.e. left part of the middle element.). For example, in this case, `5000` is the smallest number we can find.
 
